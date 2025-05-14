@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.left{
+    background-color: #ffffff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 50%;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 70%;
+}
+
+.titulo{
+    width: 100%;
+    text-align: start;
+}
+
+.titulo h1{
+    font-size: 42px;
+    font-weight: 700;
+    color: #000;
+    width: 100%;
+}
+
+.right{
+    background-color: #0056FB;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 50%;
+    gap: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+form input{
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 4px;
+}
+
+form input::placeholder{
+    color: #000;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox input{
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.criar{
+    width: 100%;
+    background-color: #0056FB;
+    color: #ffffff;
+    font-weight: bold;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.criar:hover{
+    background-color: #1566fd;
+}
+
+.possui{
+    font-weight: bold;
+}
+
+.possui a{
+    color: #0056FB;
+}
+
+
+
+.right img, h1, p{
+    width: 72%;
+    color: #ffffff;
+}
+
+.right h1{
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+@media (max-width:690px){
+    .right h1, .left h1{
+        font-size: 35px;
+    }
+    body{
+        font-size: 14px;
+    }
+    .cadastro{
+        width: 90%;
+    }
+}
+
+@media (max-width:500px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+    .cadastro, .left, .right{
+        width: 100%;
+    }
+    .left, .right{
+        min-height: 100vh;
+    }
+}
